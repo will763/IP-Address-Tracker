@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Rubik', sans-serif;
+}
+body #form {
+    position: relative;
+    background-image: url('../images/pattern-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 38vh;
+    width: 100%;
+}
+body #form h1{
+color: white;
+margin-top: .7em;
+font-weight: 500;
+}
+body #form #danger{
+    position: absolute;
+    background-color: white;
+    width: 7em;
+    height: 4em;
+    border-radius: 2em 2em 0 2em;
+    text-align: center;
+    top: 1.8em;
+    right: 59em;
+    opacity: 1;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+body #form form {
+    display: flex;
+    margin-top: 1.8em;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .2);
+}
+body #form form input[type='text']{
+    font-size: 18px;
+    font-weight: 400;
+    width: 26em;
+    height: 2.8em;
+    text-indent: 1em;
+    border-radius: .75em 0 0 .75em;
+}
+body #form form input[type='submit']{
+    background-image: url('../images/icon-arrow.svg');
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 4em;
+    height: 3.8em;
+    border-radius: 0 .75em .75em 0;
+    border: 4px solid black;
+}
+body #form form input[type='submit']:hover {
+    background-color: hsl(0, 0%, 17%);
+    border-color: hsl(0, 0%, 17%);
+}
+
+body #form #informations {
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    top: 12em;
+    background-color: white;
+    height: 8em;
+    width: 65em;
+    z-index: 2;
+    border-radius: .8em;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .2);
+}
+body #form #informations div {
+    border-left: 1px solid hsla(0, 0%, 59%,0.5);
+    margin: 2em 0;
+}
+body #form #informations div:first-child {
+    border-left: none
+}
+body #form #informations div span{
+    display: block;
+    color: hsl(0, 0%, 59%);
+    font-size: .65em;
+    font-weight: 700;
+    padding-left: 3em;
+    margin: -.5em;
+    letter-spacing: .2em;
+}
+body #form #informations div h1{
+    padding-left: 1em;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+}
+body #mapid{
+    position: relative;
+    height: 62vh;
+    width: 100%;
+    z-index: 1;
+}

@@ -1,0 +1,44 @@
+
+body #form h1 {
+   font-size: 1.4em;
+   margin-top: .4em;
+}
+
+body #form form {
+    margin-top: .8em;
+}
+
+body #form form input[type='text'] {
+width: 15em;
+height: 2.2em;
+}
+body #form form input[type='submit'] {
+    height: 3em;
+}
+body #form #informations {
+    width: 20em;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 6.5em;
+}
+body #form #informations div {
+    margin: 0;
+    border-left: none;
+    margin: .2em 0;
+    padding: 0;
+}
+body #form #informations div span {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: .6em;
+}
+body #form #informations div h1 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 0em;
+}
